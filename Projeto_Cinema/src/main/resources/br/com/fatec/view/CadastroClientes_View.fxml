@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.controller.CadastroClientes_ViewController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/css/cadastroclientes_view.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="171.0" layoutY="40.0" text="Cadastro de Clientes">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <VBox layoutX="8.0" layoutY="100.0" prefHeight="168.0" prefWidth="585.0" spacing="6.0">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="187.0" spacing="5.0">
+               <children>
+                  <Label text="CPF">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="31.0" prefWidth="123.0" text="123.456.789-18" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="585.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="261.0" spacing="5.0">
+                     <children>
+                        <Label text="Nome">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="196.0" text="Rony Amorim dos reis" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="279.0" spacing="5.0">
+                     <children>
+                        <Label text="Data de Nascimento">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="99.0" text="04/02/2004" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="577.0" spacing="10.0">
+               <children>
+                  <HBox prefHeight="36.0" prefWidth="331.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="51.0" text="Email">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="265.0" text="ronyamorimdosreis@gmail.com" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="36.0" prefWidth="257.0" spacing="5.0">
+                     <children>
+                        <Label text="Telefone">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="174.0" text="(11) 99241-4317" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="503.0" spacing="10.0">
+               <children>
+                  <HBox prefHeight="39.0" prefWidth="181.0" spacing="5.0">
+                     <children>
+                        <Label text="Senha">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="123.0" text="123456" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="39.0" prefWidth="263.0" spacing="5.0">
+                     <children>
+                        <Label text="Confirmar Senha">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="123.0" text="123456" />
+                     </children>
+                  </HBox>
+                  <CheckBox mnemonicParsing="false" prefHeight="21.0" prefWidth="141.0" text="VizualizarSenha">
+                     <HBox.margin>
+                        <Insets top="5.05" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="247.0" layoutY="297.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="39.0" prefWidth="108.0" text="Cadastrar" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

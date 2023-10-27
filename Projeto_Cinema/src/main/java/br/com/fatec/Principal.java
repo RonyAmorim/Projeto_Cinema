@@ -17,7 +17,8 @@ public class Principal extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML(""));
+        //adicionado
+        scene = new Scene(loadFXML("view/CadastroClientes_View"));
         stage.setScene(scene);
         stage.show();
     }

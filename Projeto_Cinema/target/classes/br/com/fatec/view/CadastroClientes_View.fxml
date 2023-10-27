@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import javafx.geometry.*?>
@@ -99,7 +100,7 @@
                         <PasswordField fx:id="txtConfirmSenha" prefHeight="31.0" prefWidth="124.0" />
                      </children>
                   </HBox>
-                  <CheckBox fx:id="chkVizualizarSenha" mnemonicParsing="false" prefHeight="21.0" prefWidth="141.0" text="VizualizarSenha">
+                  <CheckBox fx:id="chkVizualizarSenha" mnemonicParsing="false" onAction="#chkVizualizarSenha_Check" prefHeight="21.0" prefWidth="141.0" text="VizualizarSenha">
                      <HBox.margin>
                         <Insets top="5.05" />
                      </HBox.margin>
@@ -108,10 +109,13 @@
             </HBox>
          </children>
       </VBox>
-      <Button fx:id="btnCadastrar" layoutX="247.0" layoutY="297.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnCadastrar_Click" prefHeight="39.0" prefWidth="108.0" text="Cadastrar" textAlignment="CENTER">
+      <Button fx:id="btnCadastrar" layoutX="247.0" layoutY="297.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnCadastrar_Click" prefHeight="39.0" prefWidth="108.0" text="Cadastrar" textAlignment="CENTER" style="-fx-cursor: hand;">
          <font>
             <Font size="18.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
    </children>
 </AnchorPane>

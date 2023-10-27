@@ -13,6 +13,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 /**
  * FXML Controller class
@@ -69,7 +71,6 @@ public class CadastroClientes_ViewController implements Initializable {
     }
 
     @FXML
-    private void chkVizualizarSenha_Check(ActionEvent event) {
+    private void chkVizualizarSenha_Check(ActionEvent event){
     }
-    
 }

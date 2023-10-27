@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
 <?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.controller.CadastroClientes_ViewController">
+<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.CadastroClientes_ViewController">
     <stylesheets>
         <URL value="@/br/com/fatec/css/cadastroclientes_view.css" />
     </stylesheets>
    <children>
-      <Label layoutX="171.0" layoutY="40.0" text="Cadastro de Clientes">
+      <Label fx:id="lblCadastroDeClientes" layoutX="171.0" layoutY="40.0" text="Cadastro de Clientes">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
@@ -23,7 +20,7 @@
          <children>
             <HBox prefHeight="36.0" prefWidth="187.0" spacing="5.0">
                <children>
-                  <Label text="CPF">
+                  <Label fx:id="lblCpf" text="CPF">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -35,7 +32,7 @@
                <children>
                   <HBox prefHeight="40.0" prefWidth="261.0" spacing="5.0">
                      <children>
-                        <Label text="Nome">
+                        <Label fx:id="lblNome" text="Nome">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -45,7 +42,7 @@
                   </HBox>
                   <HBox prefHeight="38.0" prefWidth="279.0" spacing="5.0">
                      <children>
-                        <Label text="Data de Nascimento">
+                        <Label fx:id="lblDataNasc" text="Data de Nascimento">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -59,7 +56,7 @@
                <children>
                   <HBox prefHeight="36.0" prefWidth="331.0" spacing="5.0">
                      <children>
-                        <Label prefHeight="27.0" prefWidth="51.0" text="Email">
+                        <Label fx:id="lblEmail" prefHeight="27.0" prefWidth="51.0" text="Email">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -69,7 +66,7 @@
                   </HBox>
                   <HBox prefHeight="36.0" prefWidth="257.0" spacing="5.0">
                      <children>
-                        <Label text="Telefone">
+                        <Label fx:id="lblTelefone" text="Telefone">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -83,7 +80,7 @@
                <children>
                   <HBox prefHeight="39.0" prefWidth="181.0" spacing="5.0">
                      <children>
-                        <Label text="Senha">
+                        <Label fx:id="lblSenha" text="Senha">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -93,7 +90,7 @@
                   </HBox>
                   <HBox prefHeight="39.0" prefWidth="263.0" spacing="5.0">
                      <children>
-                        <Label text="Confirmar Senha">
+                        <Label fx:id="lblConfirmSenha" text="Confirmar Senha">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -101,7 +98,7 @@
                         <TextField prefHeight="31.0" prefWidth="123.0" text="123456" />
                      </children>
                   </HBox>
-                  <CheckBox mnemonicParsing="false" prefHeight="21.0" prefWidth="141.0" text="VizualizarSenha">
+                  <CheckBox fx:id="chkVizualizarSenha" mnemonicParsing="false" prefHeight="21.0" prefWidth="141.0" text="VizualizarSenha">
                      <HBox.margin>
                         <Insets top="5.05" />
                      </HBox.margin>
@@ -110,7 +107,7 @@
             </HBox>
          </children>
       </VBox>
-      <Button layoutX="247.0" layoutY="297.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="39.0" prefWidth="108.0" text="Cadastrar" textAlignment="CENTER">
+      <Button fx:id="btnCadastrar" layoutX="247.0" layoutY="297.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="39.0" prefWidth="108.0" text="Cadastrar" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>

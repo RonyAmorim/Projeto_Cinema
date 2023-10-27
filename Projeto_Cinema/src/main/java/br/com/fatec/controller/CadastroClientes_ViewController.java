@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -40,6 +41,20 @@ public class CadastroClientes_ViewController implements Initializable {
     private CheckBox chkVizualizarSenha;
     @FXML
     private Button btnCadastrar;
+    @FXML
+    private TextField txtCpf;
+    @FXML
+    private TextField txtNome;
+    @FXML
+    private TextField txtDataNasc;
+    @FXML
+    private TextField txtEmail;
+    @FXML
+    private TextField txtTelefone;
+    @FXML
+    private TextField txtSenha;
+    @FXML
+    private TextField txtConfirmSenha;
 
     /**
      * Initializes the controller class.
@@ -51,6 +66,10 @@ public class CadastroClientes_ViewController implements Initializable {
 
     @FXML
     private void btnCadastrar_Click(ActionEvent event) {
+    }
+
+    @FXML
+    private void chkVizualizarSenha_Check(ActionEvent event) {
     }
     
 }
